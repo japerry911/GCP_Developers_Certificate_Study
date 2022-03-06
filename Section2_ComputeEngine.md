@@ -1,4 +1,4 @@
-# Section 2 - Google Compute Engine
+# Section 2 - Google Compute Engine (GCE)
 
 ### Introduction
 
