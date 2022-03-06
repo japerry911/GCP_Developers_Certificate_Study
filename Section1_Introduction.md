@@ -1,0 +1,26 @@
+# Section 1 - Getting Started
+
+- before the cloud
+  - peak load provisioning
+    - buy infrastructure for peak load
+    - what would the infrastructure be doing during low loads?
+      - would be sitting idle
+  - challenges
+    - high cost of procuring infastructure
+    - need infrastructure maintenance team
+- with cloud
+  - renting resources when we want them
+    - on-demand resource provisioning
+  - elasticity
+    - ability to swiftly scale the usage of resources up and down to adapt to changing resource demands and dynamically meet workload requirements
+- advantages with cloud
+  - trade capital expense for variable expense
+  - benefit from massive economics of scale
+  - stop guessing capacity
+  - stop money running and maintaining data centers
+  - go global in minutes
+- Google Cloud Platform (GCP)
+  - one of top 3 cloud providers
+  - reliable, secure, and highly-performant
+  - "cleanest cloud"
+    - net carbon neutral
