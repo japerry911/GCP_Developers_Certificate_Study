@@ -1,5 +1,7 @@
 # Section 1 - Getting Started
 
+### Introduction
+
 - before the cloud
   - peak load provisioning
     - buy infrastructure for peak load
@@ -24,3 +26,23 @@
   - reliable, secure, and highly-performant
   - "cleanest cloud"
     - net carbon neutral
+
+### Regions and Zones
+
+- high latency - slow access
+- low availability - if data center crashes you have this
+- regions
+  - GCP provides 20+ regions around the world
+  - specific geographical location to host your resources
+  - advantages
+    - high availability
+    - low latency
+    - global footprint
+    - adhere to government regulations
+- zones
+  - each region has 3 or more zones
+  - advantages
+    - increased availability and fault tolerance within same region
+  - each zone has 1 or more discrete clusters
+    - cluster - distinct physical infrastructure that is housed in a data center
+  - zones in a region are connected through low-latency links
