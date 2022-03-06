@@ -77,3 +77,61 @@
 - hardening an image - customize images to your corporate security standards
 - prefer using custom image to startup script
 - never create image from disk with running instance
+
+### Reducing Costs
+
+- sustained use discounts
+  - automatic discounts for using resources for long periods of time
+- commited use discounts
+  - reserve compute instances ahead of time
+  - commit for 1 year or 3 years
+  - up to 70% discount on machine type and GPUs
+- preemptible VMs
+  - cheaper, temporary instances for non-crtical workloads
+  - fixed pricing, max 24 hrs, cheapest
+
+### Compute Engine: Live Migration & Availability Policy
+
+- how do you keep your VM instances running when a host system needs to be updated (a software or a hardware update needs to be performed)?
+  - Live Migration
+    - your running instance is migrated to another host in the same zone automatically
+    - does not change any attirutes or properties of the VM
+    - supported for instances with local SSDs
+    - not supported for GPUs and preempitble instances
+  - important configuration - **Availability Policy**
+    - on host maintenace - what should happen during periodic infrastructure maintenance?
+      - migrate (default) - migrate VM instance to other hardware
+      - terminate - stop the VM instance
+    - automatic restart restart VM instances if they are terminated due to non-user-initiated reasons (maintenance events, hardware failure, etc...)
+
+### Best Practices - VMs
+
+- choose zone and region based on
+  - cost
+  - regulations
+  - availability needs
+  - latency
+  - specific hardware needs
+- choose right machine type for your needs
+  - play with them to find out the right machine type
+- reverse for committed use discounts for constant workloads
+- use preemptible instances for fault-tolerant, non time critical workloads
+- use labels to indicate environment, team, business unit, etc...
+
+### Compute Engine Scenarios
+
+- what are the pre-requisites to be able to create a VM instance?
+  - project
+  - billing account
+  - compute engines API should be enabled
+- you want dedicated hardware for your compliance, licensing, and management needs
+  - sole-tenant nodes
+- I have 1000s of VMs and I want to automate OS patch managaement, OS inventory management, and OS configuration management (manage software installed)
+  - use "VM Manager"
+    - OS Patch Management
+- You want to login to your VM instance to install software
+  - you can SSH into it
+- you do not want to expost a VM to internet
+  - do not assign an external IP address
+- you want to allow HTTP traffic to your VM
+  - configure Firewall rules
