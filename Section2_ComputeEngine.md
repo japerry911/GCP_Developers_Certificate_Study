@@ -66,3 +66,14 @@
   - convenient way to create similiar instances
   - cannot be updated
     - to make a change, copy an existing template and modify it
+
+### Reducing Launch Time with Custom Image
+
+- installing OS patches and software at launch of VM instances nicreases boot up time
+  - solution: creating a custom image with OS patches and software pre-installed
+- can be created from an instance, a persistent disk, a snapshot, another image, or a file in Cloud Storage
+- can be shared across projects
+- deprecate old images (& specify replacement image)
+- hardening an image - customize images to your corporate security standards
+- prefer using custom image to startup script
+- never create image from disk with running instance
