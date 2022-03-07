@@ -51,3 +51,20 @@
     - autohealing
       - configure a health check with initial delay
         - how long should you wait for your app to initialize before running a health check?
+- updating
+  - rolling update
+    - gradual update of instances in an instance group to the new instance template
+      - specify new template
+        - optional, specify template for canary testing
+      - specify how you want update to be done
+        - when should the update happen
+          - start immediately (proactive) or when instance group is resized later (opportunistic)
+        - how should update happen
+          - maximum surge
+            - how many instaces are added at any point in time
+          - maximum unavailable
+            - how many instances can be offline during the update
+  - rolling restart/replace
+    - gradual restart or replace of all instances in the group
+      - no change in template, but replace/restart existing VMs
+      - configure maximum surge, maximum unavailable, and what you want to do (restart/replace)
