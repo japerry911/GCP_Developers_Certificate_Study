@@ -21,3 +21,14 @@
   - you can use gcloud from Cloud Shell with GCP UI
 - connecting to GCP
   - `gcloud init`
+- gcloud command structure
+  - `gcloud <group> <subgroup> <action> ...`
+    - group - config or compute or container or dataflow or functions or iam, etc...
+    - subgroup - instances or images or instance-templates or machine-types or regions or zones
+    - action - create or list or start or stop or describe, etc...
+- backed up by a VM instance
+  - automatically provisioned by Google Cloud when you launch Cloud Shell
+    - 5GB of free persistent disk storage is provided as your $HOME directory
+    - prepackaged with latest version of Cloud SDK, Docker, etc...
+    - instance is terminated if you are inactive for more than 20 minutes
+    - after 120 days of inactivity, even your $HOME directory is deleted
