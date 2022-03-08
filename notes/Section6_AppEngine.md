@@ -34,6 +34,8 @@
     - make use of compute enigne virtual machines
     - support any runtime
     - provides access to background processes and local disks
+- comparison
+  -
 
 ### Component Hierarchy
 
