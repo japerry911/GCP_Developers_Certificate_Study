@@ -35,7 +35,46 @@
     - support any runtime
     - provides access to background processes and local disks
 - comparison
-  -
+  - pricing
+    - standard
+      - instance hours
+    - flexible
+      - vCPU, memory, persistent disks
+  - scaling
+    - standard
+      - manual, basic, automatic
+    - flexible
+      - manual, automatic
+  - scaling to zero
+    - standard
+      - yes
+    - flexible
+      - no, minimum one instance
+  - instance startup time
+    - standard
+      - seconds
+    - flexible
+      - minutes
+  - rapid scaling
+    - standard
+      - yes
+    - flexible
+      - no
+  - max request timeout
+    - standard
+      - 1 to 10 minutes
+    - flexible
+      - 60 minutes
+  - local disk
+    - standard
+      - mostly (except for Python, PHP), can write to `/tmp`
+    - flexible
+      - yes, ephemeral, new disk on startup
+  - ssh for debugging
+    - standard
+      - no
+    - flexible
+      - yes
 
 ### Component Hierarchy
 
