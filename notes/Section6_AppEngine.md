@@ -89,3 +89,24 @@
   - each version can run in one or more instances
   - multiple versions can co-exist
   - options to rollback and split traffic
+
+### Scaling Instances
+
+- automatic
+  - automatically scale instances based on load
+  - recommended for continously running workloads
+  - auto scale based on:
+    - target CPU utilization - configure a CPU usage threshold
+    - target throughput utilization - configure a throughput threshold
+    - max concurrent requests - configure max concurrent requests an instance can receive
+  - configure max instances and min instances
+- basic
+  - instances are created as and when requests are received
+  - recommended for Adhoc Workloads
+  - instances are shutdown if zero requests
+  - tries to keep costs low
+  - high latency is possible
+  - not supported by flex environment
+  - configure max instances and idle timeout
+- manual - configure a specific number of to run
+  - adjust number of instances manually over time
