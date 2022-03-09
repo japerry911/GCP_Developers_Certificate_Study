@@ -78,7 +78,7 @@
 
 ### Component Hierarchy
 
-![App Engine Hierarchy](./assets/app_engine_hiearchy.png 'App Engine Hiearchy')
+![App Engine Hierarchy](./images/app_engine_hiearchy.png 'App Engine Hiearchy')
 
 - application - one app per project
 - service(s) - multiple microservices or app components
