@@ -1,4 +1,4 @@
-# Getting Started with Google App Engine
+# Section 6 - Getting Started with Google App Engine
 
 ### Introduction
 
