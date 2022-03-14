@@ -110,3 +110,20 @@
   - configure max instances and idle timeout
 - manual - configure a specific number of to run
   - adjust number of instances manually over time
+
+### Some gcloud Commands
+
+- `gcloud app services list`
+- `gcloud app versions list`
+- `gcloud app instances list`
+- `gcloud app deploy --version=<version-str>`
+- `gcloud app browse --version=<version-str>`
+- `gcloud app deploy --version=<version-str> --no-promote`
+  - no-promote
+    - can deploy new version without splitting traffic to it, will still being going to old version after deployment
+- `gcloud app services set-traffic --splits=v3=.5,v2=.5 --split-by=random`
+  - split traffic 50% 50% for v3 and v2 version IDs
+  - if `--split-by` is not specified as flag, defaults to split by IP address
+    - by IP address
+    - by cookie
+    - by random
