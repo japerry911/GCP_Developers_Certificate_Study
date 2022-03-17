@@ -1,1 +1,1 @@
-# GCP_Developers_Certificate_Study
+GCP Developers Certificate Study Notes/Exercises
